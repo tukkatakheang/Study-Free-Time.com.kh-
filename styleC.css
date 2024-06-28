@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb, #ff9a9e);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Main content styling */
+main {
+    margin-top: 0; /* Remove the margin added earlier */
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.tab-content > .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tab-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: slideInDown 1s ease;
+}
+
+.tab-content p {
+    font-size: 1.2rem;
+    color: #666;
+    animation: slideInUp 1s ease;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+img {
+    width: 100px;  /* Sets the width to 300 pixels */
+    height: 100px; /* Sets the height to 200 pixels */
+}
+
+/* Center the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Button styles (existing) */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(213, 39%, 5%); /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(213, 39%, 5%); /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background-color: hsl(213, 39%, 5%); /* Even darker blue */
+    transform: translateY(0);
+}
+
+
+/* styles.css */
+
+/* Existing styles here */
+
+/* Center the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Ensure the main section takes full height */
+main {
+    margin-top: 0; /* Remove the margin added earlier */
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles (existing) */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(213, 39%, 5%)BFF; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: (213, 39%, 5%)0056b3; /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    background-color: (213, 39%, 5%)408b; /* Even darker blue */
+    transform: translateY(0);
+}
+
+
+.btt {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(213, 39%, 5%); /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btt:hover {
+    background-color: hsl(213, 39%, 5%); /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.btt:active {
+    background-color: hsl(213, 39%, 5%); /* Even darker blue */
+    transform: translateY(0);
+}
+
+
+/* styles.css */
+
+/* Existing styles here */
+
+/* Center the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Ensure the main section takes full height */
+main {
+    margin-top: 0; /* Remove the margin added earlier */
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles (existing) */
+.btt {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(213, 39%, 5%)BFF; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btt:hover {
+    background-color: (213, 39%, 5%)0056b3; /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.btt:active {
+    background-color: (213, 39%, 5%)408b; /* Even darker blue */
+    transform: translateY(0);
+}
